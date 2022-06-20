@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="p-5 mb-4 bg-dark text-white rounded-3">
+            <h1 class="display-4 fw-bold">Second Hand CarShop</h1>
+            <p class="lead">This is the best Second Hand CarShop</p>
+            <hr class="my-4">
+            <p>For price filtering the cars please acces the page below</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="catalog.html" role="button"> Cars Catalog</a>
+            </p>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row rounded-3 border bg-light p-5">
+            <div class="col-md-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ut animi vitae fugit?
+                Aliquam, ipsa perspiciatis. Odio, quo reprehenderit ea fugiat cum quis quos dolorum pariatur dicta
+                tenetur voluptatum perspiciatis!
+            </div>
+            <div class="col-md-4 text-end">
+                <h3>Add Cars</h3>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="add-car.html" role="button"> Add</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <main class="container rounded-3 border p-5">
+        <form>
+            <div class="mb-3">
+                <label for="car-id" class="form-label">Car ID</label>
+                <input type="number" class="form-control" id="car-id" aria-describedby="car-id-help">
+                <div id="car-id-help" class="form-text">We'll never share your car id with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="car-brand" class="form-label">Car Brand</label>
+                <input type="text" class="form-control" id="car-brand">
+            </div>
+            <div class="mb-3">
+                <label for="car-year" class="form-label">Car Year</label>
+                <input type="number" class="form-control" id="car-year">
+            </div>
+            <div class="mb-3">
+                <label for="car-price" class="form-label">Car Price</label>
+                <input type="number" class="form-control" id="car-price">
+            </div>
+            <button type="button" class="btn btn-success btn-lg" onclick="saveCar()">Save Car</button>
+        </form>
+    </main>
+    <main class="container rounded-3 border p-5">
+        <form>
+            <div class="mb-3">
+                <label for="show-car-input" class="form-label">Car ID</label>
+                <input type="number" class="form-control" id="show-car-input" aria-describedby="show-car-input-help">
+                <div id="show-car-input-help" class="form-text">Show data car for inputed id.</div>
+            </div>
+            
+            <button type="button" class="btn btn-success btn-lg" onclick="showCar()">show Car</button>
+        </form>
+        <div id="show-car" class="text-center m-auto p-5">
+
+        </div>
+
+    </main>
+    <script src=" script.js"></script>
+    <!-- <form action="">
+        <input id="car-id" type="number" placeholder="ID">
+        <input id="car-brand" type="text" placeholder="brand">
+        <input id="car-year" type="number" placeholder="year">
+        <input id="car-price" type="number" placeholder="price">
+        <button id="add-car" onclick="saveCar()" type="button">Add car</button>
+    </form>
+    <form action="">
+        <input id="remove-car" type="number" placeholder="remove car id">
+        <button id="remove-car-btn" type="button" onclick="removeCar()">Remove car</button>
+    </form>
+
+    <form>
+        <input id="show-car-input" type="number" placeholder="show car id">
+        <button id="show-car-btn" type="button" onclick="showCar()">Show Car</button>
+    </form>
+
+    <div id="show-car">
+
+    </div> -->
+
+</body>
+
+</html>
